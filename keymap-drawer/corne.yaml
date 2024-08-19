@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  BASE:
-  - {t: TAB, h: LC(LS(LALT))}
+  base:
+  - TAB
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - '-'
-  - LSHIFT
+  - ESC
+  - {t: ▽, type: trans}
   - A
   - S
   - D
   - F
-  - G
+  - {t: G, h: LEFT WIN}
   - H
-  - J
+  - {t: J, h: mouse}
   - K
   - L
   - ;
-  - ''''
-  - LEFT CONTROL
+  - ENTER
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -36,15 +36,15 @@ layers:
   - ','
   - .
   - /
+  - RIGHT SHIFT
   - LEFT ALT
-  - LEFT GUI
-  - NAV
-  - BSPC
+  - LEFT CONTROL
   - SPACE
-  - SYMBOLS
-  - ENTER
-  SYMBOLS:
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - arrow
+  - symbols
+  symbols:
+  - TAB
   - '1'
   - '2'
   - '3'
@@ -55,119 +55,119 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: ▽, type: trans}
   - ESC
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '`'
-  - '~'
-  - '|'
-  - '='
-  - +
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  NAV:
-  - LG(LC(TAB))
-  - {t: ▽, type: trans}
-  - LG(LEFT BRACKET)
-  - LS(TAB)
-  - TAB
-  - LG(RIGHT BRACKET)
-  - LA(LEFT)
-  - LA(DOWN)
-  - LA(UP)
-  - LA(RIGHT)
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ESC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - SCROLL DOWN
-  - SCROLL UP
-  - {t: ▽, type: trans}
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - LG(LEFT)
-  - LG(DOWN)
-  - LG(UP)
-  - LG(RIGHT)
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - LC(LG(SPACE))
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  EXT:
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F12
-  - PP
-  - PREV
-  - NEXT
-  - MUTE
-  - VOL DN
-  - VOL UP
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - {t: ▽, type: trans}
+  - ''''
+  - '['
+  - ']'
+  - \
+  - ENTER
+  - LEFT SHIFT
+  - '&bl BL_TOG'
+  - '&bl BL_INC'
+  - '&bl BL_DEC'
+  - '&bl BL_CYCLE'
+  - RGB TOG
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '-'
+  - '='
+  - RIGHT SHIFT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCROLL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - '&msc SCROLL_DOWN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RIGHT SHIFT
+  - LEFT ALT
+  - LCTRL
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MCLK'
+  arrow:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - UP ARROW
+  - END
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN ARROW
+  - RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
