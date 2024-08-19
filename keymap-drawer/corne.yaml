@@ -71,7 +71,7 @@ layers:
   - LEFT SHIFT
   - '&bl BL_TOG'
   - '&bl BL_INC'
-  - '&bl BL_DEC'
+  - EP TOG
   - '&bl BL_CYCLE'
   - RGB TOG
   - {t: ▽, type: trans}
