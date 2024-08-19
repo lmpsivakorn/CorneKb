@@ -42,7 +42,7 @@ layers:
   - SPACE
   - BACKSPACE
   - arrow
-  - symbols
+  - {t: symbols, h: sticky}
   symbols:
   - TAB
   - '1'
