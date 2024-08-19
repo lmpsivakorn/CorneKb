@@ -42,7 +42,7 @@ layers:
   - SPACE
   - BACKSPACE
   - arrow
-  - {t: symbols, h: sticky}
+  - symbols
   symbols:
   - TAB
   - '1'
@@ -69,11 +69,11 @@ layers:
   - \
   - ENTER
   - LEFT SHIFT
-  - '&bl BL_TOG'
+  - '&bl BL_ON'
   - '&bl BL_INC'
   - EP TOG
   - '&bl BL_CYCLE'
-  - RGB TOG
+  - RGB ON
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
