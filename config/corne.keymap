@@ -64,11 +64,6 @@
       key-positions = <28 29>;
     };
 
-    Enter {
-      bindings = <&kp ENTER>;
-      key-positions = <16 17>;
-    };
-
     To_Layer1 {
       bindings = <&to 0>;
       key-positions = <0 1>;
@@ -88,6 +83,16 @@
       bindings = <&to 3>;
       key-positions = <0 4>;
     };
+
+    Enter-r {
+      bindings = <&kp ENTER>;
+      key-positions = <19 20>;
+    };
+
+    Enter-l {
+      bindings = <&kp ENTER>;
+      key-positions = <15 16>;
+    };
   };
 
   keymap {
@@ -106,10 +111,10 @@
     extended_layer {
       label = "EXT";
       bindings = <
-&trans     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0     &kp ESCAPE
-&trans     &kp F1  &kp F2  &kp F3  &kp F4  &kp F5     &trans  &kp APOS  &kp LBKT   &kp RBKT   &kp BSLH   &kp ENTER
-&kp LSHFT  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp RSHFT
-                           &trans  &none   &trans     &trans  &none     &trans
+&trans     &kp N1  &kp N2  &kp N3     &kp N4        &kp N5     &kp N6  &kp N7    &kp N8     &kp N9     &kp N0     &kp ESCAPE
+&trans     &kp F1  &kp F2  &kp F3     &kp F4        &kp F5     &trans  &kp APOS  &kp LBKT   &kp RBKT   &kp BSLH   &kp ENTER
+&kp LSHFT  &kp F6  &kp F7  &kp F8     &kp F9        &kp F10    &trans  &trans    &kp GRAVE  &kp MINUS  &kp EQUAL  &kp RSHFT
+                           &kp LCTRL  &kp LEFT_ALT  &trans     &trans  &none     &trans
       >;
     };
 
