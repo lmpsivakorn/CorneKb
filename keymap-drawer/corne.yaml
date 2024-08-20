@@ -69,11 +69,11 @@ layers:
   - \
   - ENTER
   - LEFT SHIFT
-  - '&bl BL_ON'
+  - '&bl BL_TOG'
   - '&bl BL_INC'
   - EP TOG
   - '&bl BL_CYCLE'
-  - RGB ON
+  - RGB TOG
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '`'
