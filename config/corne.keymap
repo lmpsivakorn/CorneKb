@@ -39,11 +39,11 @@
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
-&led_strip {
-  chain-length = <27>;
+//&led_strip {
+//  chain-length = <27>;
 
   // 21 backlight + 6 glowlight
-};
+//};
 
 / {
   behaviors {
