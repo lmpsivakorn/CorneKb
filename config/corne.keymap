@@ -6,12 +6,12 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/mouse.h>
 
-&led_strip {
-    chain-length = <0>;
+// &led_strip {
+//    chain-length = <0>;
 
     // chain-length = <27>;
     // 21 backlight + 6 glowlight
-};
+//};
 
 #define TAPPING_TERM 200
 
