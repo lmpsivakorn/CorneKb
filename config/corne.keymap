@@ -154,13 +154,13 @@
       >;
     };
 
-    layer_4 {
-      bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-      >;
-    };
+     mouse {
+            bindings = <
+&trans          &trans  &trans          &mmv MOVE_UP    &trans           &trans    &trans    &trans    &mwh SCROLL_UP    &trans  &trans  &trans
+&trans          &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans    &trans    &mwh SCROLL_DOWN  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans  &trans          &trans          &trans           &trans    &trans    &trans    &trans            &trans  &trans  &kp RIGHT_SHIFT
+                                        &kp LALT        &kp LCTRL        &trans    &mkp MB1  &mkp MB2  &mkp MB3
+            >;
+        };
   };
 };
