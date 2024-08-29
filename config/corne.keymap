@@ -5,22 +5,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define U_MOUSE_SCROLL_MAX 100                    /* <--- New max speed setting (default: 10) */
-
-#undef SCROLL_UP
-#undef SCROLL_DOWN
-#undef SCROLL_LEFT
-#undef SCROLL_RIGHT
-
-#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
-#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
-
-&mwh {
-  time-to-max-speed-ms = <500>;                 /* <--- How long time until max speed is reached */
-};
-
 #define DEFAULT  0
 #define LOWER    1
 #define RAISE    2
